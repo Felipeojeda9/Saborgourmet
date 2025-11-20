@@ -1,11 +1,5 @@
 package cl.ciisa.Saborgourmet.model;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
@@ -50,10 +44,6 @@ public class Reserva {
     }
     public void setFechaReserva(LocalDate fechaReserva) {
         this.fechaReserva = fechaReserva;
-    }
-    public void setFechaReserva(LocalDate fechaReserva) {
-        this.fechaReserva = fechaReserva;
-
     }
     public Mesa getMesa() {
         return mesa;
